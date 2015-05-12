@@ -1,0 +1,9 @@
+[{{#foreach posts}}
+  {
+    "title": "{{escape title}}",
+    "url": "{{escapeUrl url}}",
+    "excerpt": "{{escapedExcerpt}}",
+    "date": "{{date format='YYYY-MM-DD'}}",
+    "image": "{{@blog.url}}{{image}}"
+  }{{#unless @last}},{{/unless}}
+{{/foreach}}]

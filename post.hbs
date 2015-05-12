@@ -1,0 +1,12 @@
+{
+  "post": {
+    {{#post}}
+    "title": "{{escape title}}",
+    "content": "{{escapedContent}}",
+    "excerpt": "{{escapedExcerpt}}",
+    "image": "{{@blog.url}}{{image}}",
+    "date": "{{date format='YYYY-MM-DD'}}",
+    "url": "{{escapeUrl url}}"
+    {{/post}}
+  }
+}

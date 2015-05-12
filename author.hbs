@@ -1,0 +1,10 @@
+{
+  "author": {
+    {{#author}}
+    "name": "{{escape name}}",
+    "bio": "{{escape bio}}",
+    "image": "{{image}}",
+    {{/author}}
+    "posts": {{> "loop"}}
+  }
+}
